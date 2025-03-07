@@ -1,0 +1,153 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+#navbar a:hover {
+    color: #1abc9c;
+}
+
+#welcome-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#welcome-section img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+#content {
+    z-index: 2;
+}
+
+#greeting {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+#role {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#my-projects {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-tile {
+    width: 280px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+}
+
+.project-tile img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.project-name{
+    font-size: 22px
+}
+
+#see-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #1abc9c;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#see-more:hover {
+    background: #16a085;
+    box-shadow: 0 0 10px #1abc9c;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    color: #1abc9c;
+}
+
+#copyright {
+    margin-top: 10px;
+    font-size: 1rem;
+    opacity: 0.7;
+}
