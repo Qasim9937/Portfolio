@@ -1,129 +1,190 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-body{
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    max-width: 100vw;
-    min-height: 100vh;
-}
-
-#form{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-#search{
-    width: 70%;
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
     margin: 0;
-    border-radius: 0;
-    padding: 10px;
-    border: 2px solid black;
-    outline: none;
-    font-size: 20px;
-    border-right: none;
-}
-
-#submit{
-    background-color: black;
-    border: none;
-    color: white;
-    width: 15%;
-    font-size: 20px;
-}
-
-
-#nav-bar{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    width: 100%;
-}
-
-.nav-btn{
-    background-color: orange;
-    color: whitesmoke;
-    border: none;
-    font-weight: bold;
-    padding: 20px;
-}
-
-.nav-btn:hover{
-    background-color: black;
-    color: white
-}
-
-#products-container{
-    background-color: whitesmoke;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 30px;
-    padding: 40px 20px;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-}
-
-#product-card{
-    background-color: white;
-    border-radius: 5px;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    /* padding: 20px 0; */
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    /* flex-wrap: wrap; */
-    gap: 10px
+    max-width: 100vw;
 }
 
-#product-card img{
-    width: 150px;
+header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+    text-align: center;
+    backdrop-filter: blur(10px);
 }
 
-#add-to-cart{
-    padding: 10px;
-    border: none;
-    background-color: orangered;
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+#navbar a:hover {
+    color: #1abc9c;
+}
+
+main{
+    width: 100%;
+}
+
+#welcome-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#welcome-section img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+#content {
+    z-index: 2;
+}
+
+#greeting {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+#role {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#my-projects {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#my-projects h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px
+}
+
+.project-tile {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    padding-bottom: 20px;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+}
+
+.project-tile a{
+    text-decoration: none;
     color: white;
-    font-weight: bold;
 }
 
-#product-card:hover{
-    transform: scale(1.1);
-    transition: transform 0.1s linear
+.project-tile img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    margin-bottom: 15px;
 }
 
-#product-card #product-price{
-    font-weight: bold
+.project-name{
+    font-size: 22px
 }
 
+#see-more {
+    padding: 10px 20px;
+    background: #1abc9c;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 20px 0 10px;
+}
 
-@media only screen and (min-width:600px) and (max-width:1024px){
-    #products-container{
-        grid-template-columns: auto auto auto;
-    }
+#see-more:hover {
+    background: #16a085;
+    box-shadow: 0 0 10px #1abc9c;
+}
+
+footer {
+
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+#contact{
+    padding: 10px;
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    color: #1abc9c;
+}
+
+#copy{
+    background-color:#1e3c72;
+    padding: 10px;
+}
+
+#copyright {
+    margin-top: 10px;
+    font-size: 1rem;
+    opacity: 0.7;
 }
 
 @media only screen and (min-width: 1025px){
-    #nav-bar{
-        grid-template-columns: auto auto auto auto auto auto;
-    }
-    #products-container{
-        grid-template-columns: auto auto auto auto;
+
+    #projects{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px 40px;
     }
 
-    #search{
-        width: 50%;
-    }
-
-    #submit{
-        width: 10%;
-    }
-
-    
 }
